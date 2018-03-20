@@ -20,14 +20,12 @@ Bundle 'flazz/vim-colorschemes'
 "Bundle 'Valloric/YouCompleteMe'
 call vundle#end()
 set guifont=Monaco:h11
+"set guifont=Menlo:h11
 set background=dark
 colorscheme seti
 "colorscheme material-theme
 """"" you complete me binings"""""""
-"let g:ycm_global_yvm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-"let g:ycm_key_list_select_completion=[]
-"let g:ycm_key_list_previous_completion=[]
-
+ "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
 filetype plugin indent on
 syntax enable
@@ -94,6 +92,15 @@ set laststatus=2
 set statusline=
 
 """""""""""""""""""""""'
+" Python filetype settings... 
+augroup ft_python
+    autocmd!
+    autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
+    autocmd FileType python     vnoremap <buffer> <localleader>c :<c-u>call CommentOutVisualBlock("#")<cr>
+    set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
+augroup END
+" }}}
+"""""""""""""""""""""""
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
 
@@ -114,6 +121,9 @@ let mapleader=" "
 
 let g:tex_flavor='latex'
 
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 "~~~~~~~~ Key changes.... 
 nnoremap n nzz
 nnoremap N Nzz
