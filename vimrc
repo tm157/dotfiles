@@ -17,7 +17,8 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'flazz/vim-colorschemes'
 "Bundle 'vim-latex/vim-latex'
-"Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 set guifont=Monaco:h11
 "set guifont=Menlo:h11
@@ -76,6 +77,7 @@ set nohlsearch
 
 nnoremap <leader><space> :nohlsearch
 
+
 """""""folding""""""""""
 set foldenable
 set wrap
@@ -112,6 +114,9 @@ function! XTermPasteBegin()
     return ""
 endfunction
 "set foldlevelstart=10
+""" YCM Settings ''''
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 "set foldnestmax=10
 "set nowrap
@@ -128,6 +133,8 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 nnoremap n nzz
 nnoremap N Nzz
 map <silent> <C-n> :NERDTreeToggle<CR>
+
+
 "map <silent> <C-p> :!pdflatex % <CR>
 set clipboard=unnamed
 
