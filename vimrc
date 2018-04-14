@@ -50,6 +50,7 @@ set cindent
 set tabstop=4
 
 set softtabstop=4
+"set colorcolumn=80
 
 set expandtab
 set shiftwidth=4
@@ -132,6 +133,7 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 "~~~~~~~~ Key changes.... 
 nnoremap n nzz
 nnoremap N Nzz
+inoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 
 
