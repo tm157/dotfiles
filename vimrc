@@ -93,6 +93,7 @@ set formatoptions-=t
 """""" Status Line""""
 set laststatus=2 
 set statusline=
+set colorcolumn=80
 
 """""""""""""""""""""""'
 " Python filetype settings... 
@@ -134,6 +135,7 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 nnoremap n nzz
 nnoremap N Nzz
 inoremap ;; <Esc>
+vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 
 
