@@ -74,11 +74,9 @@ set showmatch
 
 """""""""searching"""""""""
 set incsearch
-set nohlsearch
-
-nnoremap <leader><space> :nohlsearch
-
-
+set hlsearch
+hi Search cterm=NONE ctermfg=black ctermbg=LightRed
+hi Search guibg=LightRed guifg=black
 """""""folding""""""""""
 set foldenable
 set wrap
@@ -137,6 +135,7 @@ nnoremap N Nzz
 inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>;; :nohlsearch <cr>
 
 
 "map <silent> <C-p> :!pdflatex % <CR>
