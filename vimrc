@@ -9,24 +9,29 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
 "Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator' 
 Bundle 'gmarik/vundle'
 "Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 "Bundle 'Lokaltog/vim-powerline'
-Bundle 'flazz/vim-colorschemes'
+Bundle 'flazz/vim-colorschemes' Plugin 'dracula/vim'
 "Bundle 'vim-latex/vim-latex'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 set guifont=Monaco:h11
 "set guifont=Menlo:h11
+"set guifont=Iconsolata
 set background=dark
-colorscheme seti
+"colorscheme seti
+colorscheme onedark
 "colorscheme material-theme
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+hi Tabline ctermfg=Black ctermbg=Grey
 
 filetype plugin indent on
 syntax enable
