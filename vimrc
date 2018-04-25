@@ -29,11 +29,11 @@ set guifont=Monaco:h11
 set background=dark
 "colorscheme seti
 "colorscheme onedark
-colorscheme atom-dark-256
+"colorscheme atom-dark-256
+colorscheme wombat256mod
 "colorscheme material-theme
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-hi Tabline ctermfg=Black ctermbg=Grey
 
 filetype plugin indent on
 syntax enable
@@ -142,6 +142,7 @@ inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
+hi ColorColumn ctermbg=235
 
 
 
