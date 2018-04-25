@@ -15,11 +15,12 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 "Bundle 'Lokaltog/vim-powerline'
-Bundle 'flazz/vim-colorschemes' Plugin 'dracula/vim'
+Bundle 'flazz/vim-colorschemes' 
+Plugin 'dracula/vim'
 "Bundle 'vim-latex/vim-latex'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 set guifont=Monaco:h11
@@ -27,7 +28,8 @@ set guifont=Monaco:h11
 "set guifont=Iconsolata
 set background=dark
 "colorscheme seti
-colorscheme onedark
+"colorscheme onedark
+colorscheme atom-dark-256
 "colorscheme material-theme
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
@@ -51,8 +53,7 @@ set encoding=utf-8
 set autoindent
 
 set cindent
-""""""""spaces and tabs""""""""
-set tabstop=4
+""""""""spaces and tabs"""""""" set tabstop=4
 
 set softtabstop=4
 "set colorcolumn=80
@@ -141,6 +142,7 @@ inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
+
 
 
 "map <silent> <C-p> :!pdflatex % <CR>
