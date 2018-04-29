@@ -21,16 +21,14 @@ Plugin 'dracula/vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+Plugin 'kien/ctrlp.vim'
 call vundle#end()
 set guifont=Monaco:h11
 "set guifont=Menlo:h11
 "set guifont=Iconsolata
 set background=dark
-"colorscheme seti
-"colorscheme onedark
-"colorscheme atom-dark-256
 colorscheme wombat256mod
+"colorscheme hybrid_reverse
 "colorscheme material-theme
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
@@ -97,7 +95,7 @@ set formatoptions-=t
 """""" Status Line""""
 set laststatus=2 
 set statusline=
-set colorcolumn=80
+"set colorcolumn=80
 
 """""""""""""""""""""""'
 " Python filetype settings... 
@@ -105,7 +103,8 @@ augroup ft_python
     autocmd!
     autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
     autocmd FileType python     vnoremap <buffer> <localleader>c :<c-u>call CommentOutVisualBlock("#")<cr>
-    set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
+    autocmd FileType python setlocal colorcolumn=80
+    "autocmd FileType python setlocal highlight colorcolumn ctermbg=235
 augroup END
 " }}}
 """""""""""""""""""""""
