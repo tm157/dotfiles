@@ -27,7 +27,7 @@ set guifont=Monaco:h11
 "set guifont=Menlo:h11
 "set guifont=Iconsolata
 set background=dark
-colorscheme wombat256mod
+colorscheme wombat256i
 "colorscheme hybrid_reverse
 "colorscheme material-theme
 """"" you complete me binings"""""""
@@ -91,6 +91,7 @@ set textwidth=0
 set wrapmargin=0
 
 set formatoptions-=t
+set tags=tags
 
 """""" Status Line""""
 set laststatus=2 
@@ -142,7 +143,9 @@ vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 hi ColorColumn ctermbg=235
-
+hi Comment ctermfg=245
+hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
+hi VisualNOS    ctermfg=251        ctermbg=236        cterm=none        guifg=#c3c6ca    guibg=#303030    gui=none
 
 
 "map <silent> <C-p> :!pdflatex % <CR>
