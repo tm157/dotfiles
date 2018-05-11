@@ -1,9 +1,16 @@
 ###OK & FEEL ###
+
+unbind C-b
+set -g prefix `
+bind-key ` send-prefix
 setw -g xterm-keys on
+
+set -g base-index 1
 
 set -g default-terminal "xterm-256color"
 
 set -g default-terminal "screen-256color"
+
 
 ##default statusbar colors
 set-option -g status-bg colour235
@@ -15,7 +22,7 @@ set-window-option -g window-status-bg default
 #
 # active window title colors
 set-window-option -g window-status-current-fg colour14
-set-window-option -g window-status-current-bg default
+set-window-option -g window-status-current-bg colour242
 set-window-option -g window-status-current-attr bright
 
 #set -g pane-border-bg colour235
