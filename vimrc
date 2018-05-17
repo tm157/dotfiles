@@ -19,6 +19,7 @@ Bundle 'flazz/vim-colorschemes'
 Plugin 'dracula/vim'
 "Bundle 'vim-latex/vim-latex'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tomasiser/vim-code-dark'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'kien/ctrlp.vim'
@@ -98,6 +99,7 @@ set laststatus=2
 set statusline=
 "set colorcolumn=80
 
+
 """""""""""""""""""""""'
 " Python filetype settings... 
 augroup ft_python
@@ -142,10 +144,13 @@ inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
-hi ColorColumn ctermbg=235
+hi ColorColumn ctermbg=235 guibg=#303030
 hi Comment ctermfg=245
 hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
 hi VisualNOS    ctermfg=251        ctermbg=236        cterm=none        guifg=#c3c6ca    guibg=#303030    gui=none
+hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+hi CursorLineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+hi Normal guibg=#1a1a1a
 
 
 "map <silent> <C-p> :!pdflatex % <CR>
