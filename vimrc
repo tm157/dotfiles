@@ -98,7 +98,8 @@ set tags=tags
 set laststatus=2 
 set statusline=
 "set colorcolumn=80
-
+"""""""NerdTree fix"""""""""""""
+let NERDTreeIgnore = ['\.pyc$']
 
 """""""""""""""""""""""'
 " Python filetype settings... 
