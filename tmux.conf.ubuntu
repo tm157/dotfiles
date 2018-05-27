@@ -35,11 +35,12 @@ set -g mouse on
 set-option -g renumber-windows on
 
 
-setw -g monitor-activity on
-
 # Use vim keybindings in copy mode
 unbind '"'
 unbind %
+
+#window-status-activity-style none
+#window-status-bell-style none
 ########################################################################
 # Pane management / navigation
 # navigation with C-{h,j,k,l} -- NO PREFIX
@@ -110,7 +111,7 @@ bind ] run "tmux set-buffer \"$(xclip -o -sel clipboard)\" && tmux paste-buffer"
 bind-key -t vi-copy 'C-v' rectangle-toggle
 
 # http://askubuntu.com/a/507215/413683
-set -g set-clipboard off
+set -g set-clipboard on
 
 # Buffers to/from Mac clipboard, yay tmux book from pragprog
 bind -n C-s run-shell -b "tmux save-buffer - | xclip -selection clipboard > /dev/null" \;

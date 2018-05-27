@@ -145,6 +145,7 @@ inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
+vnoremap <leader>y "+y
 hi ColorColumn ctermbg=235 guibg=#303030
 hi Comment ctermfg=245
 hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
@@ -155,5 +156,17 @@ hi Normal guibg=#1a1a1a
 
 
 "map <silent> <C-p> :!pdflatex % <CR>
-set clipboard=unnamed
+"set clipboard=unnamed
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
+
+
+"ctrl-p settings
+let g:ctrlp_max_files = 0
+let g:ctrlp_custom_ignore = {
+         \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+         \ 'file': '\v\.(exe|so|dll|swp|h5|t7|png|jpg|html)$',
+         \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+         \}
 
