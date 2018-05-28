@@ -146,9 +146,9 @@ vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+y
+nnoremap <leader>p "+p
 
 "vnoremap <silent> <leader>p :set paste<CR>"+p :set nopaste <CR>
-vnoremap <silent> <leader>p "+p
 
 hi ColorColumn ctermbg=235 guibg=#303030
 hi Comment ctermfg=245
