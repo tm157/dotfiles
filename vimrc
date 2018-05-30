@@ -7,19 +7,18 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'vim-latex'
 "Plugin 'tpope/vim-fugitive'
-Plugin 'L9'
+"Plugin 'L9'
 "Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'christoomey/vim-tmux-navigator' 
 Bundle 'gmarik/vundle'
 "Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
+Bundle 'taglist.vim'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'flazz/vim-colorschemes' 
-Plugin 'dracula/vim'
 "Bundle 'vim-latex/vim-latex'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'tomasiser/vim-code-dark'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'kien/ctrlp.vim'
@@ -52,6 +51,7 @@ set encoding=utf-8
 set autoindent
 
 set cindent
+set splitbelow
 """"""""spaces and tabs"""""""" set tabstop=4
 
 set softtabstop=4
@@ -145,10 +145,13 @@ inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
-vnoremap <leader>y "+y
-nnoremap <leader>p "+p
+vnoremap <leader>y "+y 
+nnoremap <leader>p "+p 
 
-"vnoremap <silent> <leader>p :set paste<CR>"+p :set nopaste <CR>
+"Tagbar
+"let g:tagbar_usearrows = 1
+nnoremap <silent> <leader>m :TlistToggle<CR>
+
 
 hi ColorColumn ctermbg=235 guibg=#303030
 hi Comment ctermfg=245
@@ -160,7 +163,7 @@ hi Normal guibg=#1a1a1a
 
 
 "map <silent> <C-p> :!pdflatex % <CR>
-"set clipboard=unnamed
+"set clipboard+=unnamedplus
 if $TMUX == ''
     set clipboard+=unnamed
 endif
