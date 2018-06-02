@@ -20,14 +20,12 @@ set-option -g status-fg colour7
 set-window-option -g window-status-fg colour6
 set-window-option -g window-status-bg default
 #
-# active window title colors
+#active window title colors
 set-window-option -g window-status-current-fg colour14
-set-window-option -g window-status-current-bg colour242
+set-window-option -g window-status-current-bg colour238
 set-window-option -g window-status-current-attr bright
 
-#set -g pane-border-bg colour235
 set -g pane-border-fg colour238
-#set -g pane-active-border-bg colour236
 set -g pane-active-border-fg colour6
 
 # Enable mouse mode

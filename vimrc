@@ -18,18 +18,17 @@ Bundle 'taglist.vim'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'flazz/vim-colorschemes' 
 "Bundle 'vim-latex/vim-latex'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'kien/ctrlp.vim'
 call vundle#end()
 set guifont=Monaco:h11
-"set guifont=Menlo:h11
-"set guifont=Iconsolata
+"set guifont=Menlo:h11 "set guifont=Iconsolata
 set background=dark
 colorscheme wombat256i
-"colorscheme hybrid_reverse
-"colorscheme material-theme
+"colorscheme Tomorrow-Night
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
@@ -80,8 +79,7 @@ set showmatch
 """""""""searching"""""""""
 set incsearch
 set hlsearch
-hi Search cterm=NONE ctermfg=black ctermbg=LightRed
-hi Search guibg=LightRed guifg=black
+"hi Search cterm=NONE ctermfg=black ctermbg=152 guifg=black guibg=#afd7d7
 """""""folding""""""""""
 set foldenable
 set wrap
@@ -154,13 +152,15 @@ nnoremap <silent> <leader>m :TlistToggle<CR>
 
 
 hi ColorColumn ctermbg=235 guibg=#303030
-hi Comment ctermfg=245
+hi CursorLine ctermbg=235 guibg=#303030
+hi Comment ctermfg=245 guifg=#8a8a8a
 hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
 hi VisualNOS    ctermfg=251        ctermbg=236        cterm=none        guifg=#c3c6ca    guibg=#303030    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-hi Normal guibg=#1a1a1a
-
+hi Normal guibg=#1a1a1a ctermbg=none ctermfg=250 guifg=#bcbcbc
+hi clear todo
+hi todo ctermbg=238 guibg=#626262
 
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
