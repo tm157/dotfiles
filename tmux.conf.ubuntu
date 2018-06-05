@@ -33,6 +33,7 @@ set -g mouse on
 set-option -g renumber-windows on
 
 # Set the title bar
+setw -g monitor-activity on
 set -g set-titles on
 #set -g set-titles-string '#(curl ipecho.net/plain;echo)'
 
