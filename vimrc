@@ -92,6 +92,11 @@ set wrapmargin=0
 set formatoptions-=t
 set tags=tags
 
+"""""""UNDO FIX""""""
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir
+
+
 """""" Status Line""""
 set laststatus=2 
 set statusline=
