@@ -44,6 +44,7 @@ set noswapfile
 set nobackup
 
 set visualbell
+set t_vb=
 
 set encoding=utf-8
 
