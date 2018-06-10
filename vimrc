@@ -95,6 +95,7 @@ set tags=tags
 
 """""""UNDO FIX""""""
 set undofile " Maintain undo history between sessions
+set undolevels=5000
 set undodir=~/.vim/undodir
 
 
