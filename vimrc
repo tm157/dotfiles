@@ -5,10 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'vim-latex'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'L9'
-"Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'christoomey/vim-tmux-navigator' 
 Bundle 'gmarik/vundle'
 "Bundle 'scrooloose/syntastic'
@@ -52,6 +49,7 @@ set autoindent
 
 set cindent
 set splitbelow
+set splitright
 """"""""spaces and tabs"""""""" set tabstop=4
 
 set softtabstop=4
@@ -94,9 +92,10 @@ set formatoptions-=t
 set tags=tags
 
 """""""UNDO FIX""""""
-set undofile " Maintain undo history between sessions
-set undolevels=5000
-set undodir=~/.vim/undodir
+"" Does more harm than good right now""
+"set undofile " Maintain undo history between sessions
+"set undolevels=5000
+"set undodir=~/.vim/undodir
 
 
 """""" Status Line""""
@@ -177,10 +176,15 @@ endif
 
 
 "ctrl-p settings
-let g:ctrlp_max_files = 0
+let g:ctrlp_working_path_mode = 'ra'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
-         \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-         \ 'file': '\v\.(exe|so|dll|swp|h5|t7|png|jpg|html)$',
-         \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
-         \}
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
