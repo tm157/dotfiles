@@ -151,6 +151,7 @@ map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+y 
 nnoremap <leader>p "+p 
+nnoremap <leader>l :e#<cr>
 
 "Tagbar
 "let g:tagbar_usearrows = 1
