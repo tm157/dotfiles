@@ -42,6 +42,18 @@ set -g set-titles on
 unbind '"'
 unbind %
 
+# status bar updates every 15s by default**, change to 1s here 
+# (this step is optional - a lower latency might have negative battery/cpu usage impacts)
+set -g status-interval 1
+# show host name and IP address on left side of status bar
+set -g status-left-length 70
+set -g status-left "#[fg=colour240]Remote #[fg=colour250]#h : #[fg=colour250]#(ip addr show dev eth0 | grep "inet[^6]" | awk '{print $2}')"
+
+# show session name, window & pane number, date and time on right side of
+# status bar
+set -g status-right-length 60
+set -g status-right "#[fg=colour250]#S #I:#P  #[fg=250] %d/%M"
+
 #window-status-activity-style none
 #window-status-bell-style none
 ########################################################################
