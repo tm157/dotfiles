@@ -149,9 +149,11 @@ inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
-vnoremap <leader>y "+y 
+vnoremap <leader>y "+yy
 nnoremap <leader>p "+p 
 nnoremap <leader>l :e#<cr>
+nnoremap <leader>k <C-u>
+nnoremap <leader>j <C-d>
 
 "Tagbar
 "let g:tagbar_usearrows = 1
