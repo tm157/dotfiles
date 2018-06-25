@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'christoomey/vim-tmux-navigator' 
 Bundle 'gmarik/vundle'
 "Bundle 'scrooloose/syntastic'
@@ -15,7 +14,6 @@ Bundle 'taglist.vim'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'flazz/vim-colorschemes' 
 "Bundle 'vim-latex/vim-latex'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
