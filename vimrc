@@ -168,7 +168,7 @@ hi Comment ctermfg=245 guifg=#8a8a8a
 hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
 hi VisualNOS    ctermfg=251        ctermbg=236        cterm=none        guifg=#c3c6ca    guibg=#303030    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
 hi Normal guibg=#1c1c1c ctermbg=234 ctermfg=250 guifg=#bcbcbc
 hi clear todo
 hi todo ctermbg=238 guibg=#626262
