@@ -44,8 +44,10 @@ set t_vb=
 set encoding=utf-8
 
 set autoindent
-
 set cindent
+set copyindent
+set bs=indent,eol,start
+
 set splitbelow
 set splitright
 """"""""spaces and tabs"""""""" set tabstop=4
@@ -94,7 +96,9 @@ set tags=tags
 "set undofile " Maintain undo history between sessions
 "set undolevels=5000
 "set undodir=~/.vim/undodir
-
+set title
+set ignorecase
+set smartcase
 
 """""" Status Line""""
 set laststatus=2 
