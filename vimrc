@@ -23,7 +23,8 @@ set guifont=Monaco:h11
 "set guifont=Menlo:h11 "set guifont=Iconsolata
 set background=dark
 colorscheme wombat256i
-colorscheme Tomorrow-Night
+colorscheme seti
+colorscheme final
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 

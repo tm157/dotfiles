@@ -38,8 +38,8 @@ set-option -g renumber-windows on
 setw -g monitor-activity on
 set -g set-titles on
 set -g set-titles-string '#H'
-set -g window-status-format '#I:#(pwd="#{pane_current_path}"; echo ${pwd####*/})#F'
-set -g window-status-current-format '#I:#(pwd="#{pane_current_path}"; echo ${pwd####*/})#F'
+#set -g window-status-format '#I:#(pwd="#{pane_current_path}"; echo ${pwd####*/})#F'
+#set -g window-status-current-format '#I:#(pwd="#{pane_current_path}"; echo ${pwd####*/})#F'
 
 
 # Use vim keybindings in copy mode
