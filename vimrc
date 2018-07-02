@@ -22,9 +22,8 @@ call vundle#end()
 set guifont=Monaco:h11
 "set guifont=Menlo:h11 "set guifont=Iconsolata
 set background=dark
-colorscheme wombat256i
-colorscheme seti
 colorscheme final
+colorscheme limelight
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
@@ -173,6 +172,8 @@ hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Gr
 hi Normal guibg=#1c1c1c ctermbg=234 ctermfg=250 guifg=#bcbcbc
 hi clear todo
 hi todo ctermbg=238 guibg=#626262
+hi Pmenu                        ctermfg=248   ctermbg=236  cterm=NONE          guifg=#a8a8a8      guibg=#4c4c4c      gui=NONE
+hi PmenuSel                     ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4fa5c7   gui=NONE
 
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
