@@ -78,6 +78,7 @@ set showmatch
 set incsearch
 set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
+hi IncSearch cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
 """""""folding""""""""""
 set foldenable
 set wrap
@@ -161,14 +162,14 @@ nnoremap <leader>j <C-d>
 nnoremap <silent> <leader>m :TlistToggle<CR>
 
 
-hi ColorColumn ctermbg=235 guibg=#303030
-hi CursorLine ctermbg=235 guibg=#303030
+hi ColorColumn ctermbg=236 guibg=#303030
+hi CursorLine ctermbg=236 guibg=#303030
 hi Comment ctermfg=245 guifg=#8a8a8a
 hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
 hi VisualNOS    ctermfg=251        ctermbg=236        cterm=none        guifg=#c3c6ca    guibg=#303030    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
-hi Normal guibg=#1c1c1c ctermbg=234 ctermfg=250 guifg=#bcbcbc
+hi Normal guibg=#262626 ctermbg=235 ctermfg=250 guifg=#bcbcbc
 hi clear todo
 hi todo ctermbg=238 guibg=#626262
 hi Pmenu                        ctermfg=248   ctermbg=236  cterm=NONE          guifg=#a8a8a8      guibg=#4c4c4c      gui=NONE
