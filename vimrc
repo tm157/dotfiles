@@ -174,6 +174,7 @@ hi clear todo
 hi todo ctermbg=238 guibg=#626262
 hi Pmenu                        ctermfg=248   ctermbg=236  cterm=NONE          guifg=#a8a8a8      guibg=#4c4c4c      gui=NONE
 hi PmenuSel                     ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4fa5c7   gui=NONE
+hi MatchParen ctermbg=236 guibg=#303030
 
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus

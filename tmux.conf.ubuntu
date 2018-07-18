@@ -15,7 +15,7 @@ set -g default-terminal "screen-256color"
 #set -g default-command 'reattach-to-user-namespace $SHELL --login'
 
 ##default statusbar colors
-set-option -g status-bg colour238
+set-option -g status-bg colour237
 set-option -g status-fg colour7
 #
 # default window title colors
