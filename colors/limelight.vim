@@ -282,7 +282,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:hue_6   = 'd19a66' " orange 1
     let s:hue_6_2 = 'e5c07b' " orange 2
 
-    let s:syntax_bg     = '282c34'
+    let s:syntax_bg     = '262626'
     let s:syntax_gutter = '636d83'
     let s:syntax_cursor = '2c323c'
 
