@@ -172,8 +172,8 @@ hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Gr
 "hi Normal guibg=#262626 ctermbg=235 ctermfg=250 guifg=#bcbcbc
 hi Normal guibg=#262626 ctermbg=235 ctermfg=249 guifg=#b2b2b2
 hi clear todo
-hi todo ctermbg=239 guibg=#4e4e4e
-hi Pmenu ctermfg=248   ctermbg=236  cterm=NONE          guifg=#a8a8a8      guibg=#303030     gui=NONE
+hi todo ctermbg=238 guibg=#626262
+hi Pmenu ctermfg=248   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#3a3a3a     gui=NONE
 hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4e4e4e   gui=NONE
 hi MatchParen ctermbg=236 guibg=#303030
 
