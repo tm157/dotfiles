@@ -165,13 +165,14 @@ nnoremap <silent> <leader>m :TlistToggle<CR>
 hi ColorColumn ctermbg=236 guibg=#303030
 hi CursorLine ctermbg=236 guibg=#303030
 hi Comment ctermfg=245 guifg=#8a8a8a
-hi Visual        ctermfg=251        ctermbg=239        cterm=none        guifg=#c3c6ca    guibg=#554d4b    gui=none
+hi Visual        ctermfg=251        ctermbg=240        cterm=none        guifg=#c3c6ca    guibg=#585858    gui=none
 hi VisualNOS    ctermfg=251        ctermbg=236        cterm=none        guifg=#c3c6ca    guibg=#303030    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
-hi Normal guibg=#262626 ctermbg=235 ctermfg=250 guifg=#bcbcbc
+"hi Normal guibg=#262626 ctermbg=235 ctermfg=250 guifg=#bcbcbc
+hi Normal guibg=#262626 ctermbg=235 ctermfg=249 guifg=#b2b2b2
 hi clear todo
-hi todo ctermbg=238 guibg=#626262
+hi todo ctermbg=239 guibg=#4e4e4e
 hi Pmenu ctermfg=248   ctermbg=236  cterm=NONE          guifg=#a8a8a8      guibg=#303030     gui=NONE
 hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4e4e4e   gui=NONE
 hi MatchParen ctermbg=236 guibg=#303030
