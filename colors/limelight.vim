@@ -276,7 +276,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
 
     "let s:hue_5   = 'e06c75' " red 1
     "let s:hue_5   = 'c7525b' " red 1
-    let s:hue_5   = 'd75f5f' " red 1
+    "let s:hue_5   = 'd75f5f' " red 1
+    let s:hue_5   = 'af87d7' " red 1
     let s:hue_5_2 = 'be5046' " red 2
 
     let s:hue_6   = 'd19a66' " orange 1
