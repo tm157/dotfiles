@@ -25,6 +25,10 @@ set background=dark
 colorscheme limelight
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+ "
+
+
+
 
 filetype plugin indent on
 syntax enable
@@ -178,7 +182,9 @@ hi todo ctermbg=238 guibg=#626262
 hi Pmenu ctermfg=248   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#3a3a3a     gui=NONE
 hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4e4e4e   gui=NONE
 hi MatchParen ctermbg=236 guibg=#303030
-
+hi TabLineFill ctermfg=249 ctermbg=234
+hi TabLine ctermfg=249 ctermbg=234
+hi TabLineSel ctermfg=249 ctermbg=235
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
 if $TMUX == ''
