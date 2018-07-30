@@ -184,7 +184,7 @@ hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      gui
 hi MatchParen ctermbg=236 guibg=#303030
 hi TabLineFill ctermfg=249 ctermbg=234
 hi TabLine ctermfg=249 ctermbg=234
-hi TabLineSel ctermfg=249 ctermbg=31
+hi TabLineSel ctermfg=235 ctermbg=31
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
 if $TMUX == ''
