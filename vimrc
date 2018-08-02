@@ -118,7 +118,6 @@ augroup ft_python
     autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
     autocmd FileType python     vnoremap <buffer> <localleader>c :<c-u>call CommentOutVisualBlock("#")<cr>
     autocmd FileType python setlocal colorcolumn=80
-    "autocmd FileType python setlocal highlight colorcolumn ctermbg=235
 augroup END
 " }}}
 """""""""""""""""""""""
@@ -184,7 +183,7 @@ hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      gui
 hi MatchParen ctermbg=236 guibg=#303030
 hi TabLineFill ctermfg=249 ctermbg=234
 hi TabLine ctermfg=249 ctermbg=234
-hi TabLineSel ctermfg=249 ctermbg=235
+hi TabLineSel ctermfg=249 ctermbg=31
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
 if $TMUX == ''
