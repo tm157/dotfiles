@@ -159,7 +159,7 @@ nnoremap <leader>p "+p
 nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>
-nnoremap <leader>s ciw
+nnoremap s ciw
 
 "Tagbar
 "let g:tagbar_usearrows = 1
