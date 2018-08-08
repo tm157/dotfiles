@@ -271,10 +271,9 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
 
     let s:hue_1  = '56b6c2' " cyan
     let s:hue_2  = '61afef' " blue
-    "let s:hue_2  = '56b6c2' " blue
     let s:hue_3  = 'd75f5f' " red
-    "let s:hue_4  = '98c379' " green
-    let s:hue_4  = '87af5f' " green
+    let s:hue_4  = '98c379' " green
+    "let s:hue_4  = '87af5f' " green
 
     "let s:hue_5   = 'e06c75' " red 1
     "let s:hue_5   = 'c7525b' " red 1
