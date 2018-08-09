@@ -177,7 +177,8 @@ hi Normal guibg=#262626 ctermbg=235 ctermfg=249 guifg=#b2b2b2
 hi clear todo
 hi todo ctermbg=238 guibg=#626262
 hi Pmenu ctermfg=248   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#3a3a3a     gui=NONE
-hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4e4e4e   gui=NONE
+"hi PmenuSel ctermfg=NONE  ctermbg=239    cterm=NONE          guifg=NONE      guibg=#4e4e4e   gui=NONE
+hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
 hi MatchParen ctermbg=236 guibg=#303030
 hi TabLineFill ctermfg=249 ctermbg=234
 hi TabLine ctermfg=249 ctermbg=234
