@@ -31,7 +31,7 @@ set -g pane-border-fg colour238
 set -g pane-active-border-fg colour6
 
 # Enable mouse mode
-set -g mouse on
+set -g mouse off
 set-option -g renumber-windows on
 
 # Set the title bar
