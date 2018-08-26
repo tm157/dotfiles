@@ -191,6 +191,10 @@ endif
 "ctrl-p settings
 let g:ctrlp_working_path_mode = 'ra'
 
+"airline settings
+let g:airline#extensions#branch#enabled = 0
+
+
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
