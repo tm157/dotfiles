@@ -165,7 +165,7 @@ nnoremap <silent> <leader>m :TlistToggle<CR>
 
 hi ColorColumn ctermbg=236 guibg=#303030
 hi CursorLine ctermbg=236 guibg=#303030
-hi Comment ctermfg=245 guifg=#8a8a8a
+hi Comment ctermfg=243 guifg=#767676
 hi Visual        ctermfg=black        ctermbg=140        cterm=none        guifg=black   guibg=#af87d7   gui=none
 hi VisualNOS    ctermfg=black        ctermbg=140        cterm=none        guifg=black    guibg=#af87d7    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
