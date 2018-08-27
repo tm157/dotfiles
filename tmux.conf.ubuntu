@@ -79,10 +79,10 @@ bind -n M-l resize-pane -R 5
 
 # C-g C-k to passthrough a C-k
 # C-k is consumed for pane navigation but we want it for kill-to-eol
-unbind C-k
-bind C-k send-key C-k
+#unbind C-k
+#bind C-k send-key C-k
 
-http://128.2.194.131:10110/#images
+bind r source-file ~/.tmux.conf \; display "Reloaded Config"
 
 set-option -g allow-rename off
 set-option -g renumber-windows on
