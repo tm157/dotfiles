@@ -165,15 +165,13 @@ nnoremap <silent> <leader>m :TlistToggle<CR>
 
 hi ColorColumn ctermbg=236 guibg=#303030
 hi CursorLine ctermbg=236 guibg=#303030
-hi Comment ctermfg=245 guifg=#8a8a8a
+hi Comment ctermfg=243 guifg=#767676
 hi Visual        ctermfg=black        ctermbg=140        cterm=none        guifg=black   guibg=#af87d7   gui=none
 hi VisualNOS    ctermfg=black        ctermbg=140        cterm=none        guifg=black    guibg=#af87d7    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
 hi Normal guibg=#262626 ctermbg=235 ctermfg=249 guifg=#b2b2b2
 hi clear todo
-"hi todo ctermbg=238 guibg=#626262
-"hi todo ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
 hi todo   ctermfg=73   ctermbg=237 cterm=NONE               guifg=#008787  guibg=#5fafaf  gui=NONE
 hi Pmenu ctermfg=248   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#3a3a3a     gui=NONE
 hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
@@ -190,6 +188,10 @@ endif
 
 "ctrl-p settings
 let g:ctrlp_working_path_mode = 'ra'
+
+"airline settings
+let g:airline#extensions#branch#enabled = 0
+
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
