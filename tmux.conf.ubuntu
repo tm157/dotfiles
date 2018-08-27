@@ -82,6 +82,7 @@ bind -n M-l resize-pane -R 5
 unbind C-k
 bind C-k send-key C-k
 
+http://128.2.194.131:10110/#images
 
 set-option -g allow-rename off
 set-option -g renumber-windows on
