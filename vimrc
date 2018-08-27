@@ -76,10 +76,10 @@ set mouse=a
 set showmatch
 
 """""""""searching"""""""""
-"set incsearch
+set incsearch
 set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
-"hi IncSearch cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
+hi IncSearch cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
 """""""folding""""""""""
 set foldenable
 set wrap
@@ -172,8 +172,6 @@ hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=Dark
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
 hi Normal guibg=#262626 ctermbg=235 ctermfg=249 guifg=#b2b2b2
 hi clear todo
-"hi todo ctermbg=238 guibg=#626262
-"hi todo ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
 hi todo   ctermfg=73   ctermbg=237 cterm=NONE               guifg=#008787  guibg=#5fafaf  gui=NONE
 hi Pmenu ctermfg=248   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#3a3a3a     gui=NONE
 hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
