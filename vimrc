@@ -76,10 +76,10 @@ set mouse=a
 set showmatch
 
 """""""""searching"""""""""
-set incsearch
+"set incsearch
 set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
-hi IncSearch cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
+"hi IncSearch cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
 """""""folding""""""""""
 set foldenable
 set wrap
