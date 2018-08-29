@@ -121,3 +121,5 @@ set -g set-clipboard off
 bind -n C-s run-shell -b "tmux save-buffer - | xclip -selection clipboard > /dev/null" \;
 bind -n C-v run-shell -b  "tmux set-buffer \"$(xclip -o)\"; tmux paste-buffer" \; 
 
+bind-key -n C-S-Left swap-window -t -1
+bind-key -n C-S-Right swap-window -t +1
