@@ -76,7 +76,7 @@ set mouse=a
 set showmatch
 
 """""""""searching"""""""""
-set incsearch
+set noincsearch
 set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
 hi IncSearch cterm=NONE ctermfg=black ctermbg=140 guifg=black guibg=#af87d7
