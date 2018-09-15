@@ -1,10 +1,3 @@
-" Name:    one vim colorscheme
-" Author:  Ramzi Akremi
-" License: MIT
-" Version: 1.1.1-pre
-
-" Global setup =============================================================={{{
-
 if exists("*<SID>X")
   delf <SID>X
   delf <SID>rgb
@@ -287,7 +280,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
 
     let s:syntax_bg     = '262626'
     let s:syntax_gutter = '636d83'
-    let s:syntax_cursor = '2c323c'
+    let s:syntax_cursor = 'b2b2b2'
 
     "let s:syntax_accent = '528bff'
     let s:syntax_accent = '61afef'
@@ -315,7 +308,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
 
     let s:syntax_bg     = 'fafafa'
     let s:syntax_gutter = '9e9e9e'
-    let s:syntax_cursor = 'f0f0f0'
+    let s:syntax_cursor = 'b2b2b2'
 
     let s:syntax_accent = '526fff'
     let s:syntax_accent_2 = '0083be'
@@ -336,7 +329,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('bold',         '',              '',               'bold')
   call <sid>X('ColorColumn',  '',              s:syntax_cursor,  '')
   call <sid>X('Conceal',      s:mono_4,        s:syntax_bg,      '')
-  call <sid>X('Cursor',       '',              s:syntax_accent,  '')
+  call <sid>X('Cursor',       '',              s:syntax_cursor,  '')
   call <sid>X('CursorIM',     '',              '',               '')
   call <sid>X('CursorColumn', '',              s:syntax_cursor,  '')
   call <sid>X('CursorLine',   '',              s:syntax_cursor,  'none')
