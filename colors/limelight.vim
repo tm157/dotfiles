@@ -407,7 +407,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('PreCondit',      s:hue_5,       '',          '')
   call <sid>X('Type',           s:hue_5,       '',          'none')
   call <sid>X('StorageClass',   s:hue_6_2,       '',          '')
-  call <sid>X('Structure',      s:hue_5,       '',          '')
+  call <sid>X('Structure',      s:hue_6_2,       '',          '')
   call <sid>X('Typedef',        s:hue_6_2,       '',          '')
   call <sid>X('Special',        s:hue_2,         '',          '')
   call <sid>X('SpecialChar',    '',              '',          '')
