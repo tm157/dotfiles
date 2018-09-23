@@ -264,14 +264,10 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
 
     let s:hue_1  = '56b6c2' " cyan
     let s:hue_2  = '61afef' " blue
-    "let s:hue_2 = '528bff'
     let s:hue_3  = 'd75f5f' " red
     "let s:hue_4  = '98c379' " green
     let s:hue_4  = '6ec579' " green
 
-    "let s:hue_5   = 'e06c75' " red 1
-    "let s:hue_5   = 'c7525b' " red 1
-    "let s:hue_5   = 'd75f5f' " red 1
     let s:hue_5   = 'af87d7' " purple
     let s:hue_5_2 = 'be5046' " red 2
 
@@ -306,7 +302,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:hue_6   = '986801' " orange 1
     let s:hue_6_2 = 'c18401' " orange 2
 
-    let s:syntax_bg     = 'fafafa'
+    let s:syntax_bg     = '262626'
     let s:syntax_gutter = '9e9e9e'
     let s:syntax_cursor = 'b2b2b2'
 
