@@ -72,7 +72,7 @@ filetype indent on
 set wildmenu
 
 set lazyredraw
-set mouse=a
+"set mouse=a
 set showmatch
 
 """""""""searching"""""""""
