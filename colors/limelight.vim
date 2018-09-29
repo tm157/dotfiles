@@ -274,7 +274,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:hue_6   = 'd19a66' " orange 1
     let s:hue_6_2 = 'e5c07b' " orange 2
 
-    let s:syntax_bg     = '262626'
+    let s:syntax_bg     = '303030'
     let s:syntax_gutter = '636d83'
     let s:syntax_cursor = 'b2b2b2'
 
@@ -302,7 +302,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
     let s:hue_6   = '986801' " orange 1
     let s:hue_6_2 = 'c18401' " orange 2
 
-    let s:syntax_bg     = '262626'
+    let s:syntax_bg     = '303030'
     let s:syntax_gutter = '9e9e9e'
     let s:syntax_cursor = 'b2b2b2'
 
@@ -350,7 +350,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Search',       s:syntax_bg,     s:hue_6_2,        '')
   call <sid>X('SpecialKey',   s:special_grey,  '',               'none')
   call <sid>X('Whitespace',   s:special_grey,  '',               'none')
-  call <sid>X('StatusLine',   s:syntax_fg,     s:syntax_cursor,  'none')
+  call <sid>X('StatusLine',   s:syntax_fg,     s:syntax_bg,  'none')
   call <sid>X('StatusLineNC', s:mono_3,        '',               '')
   call <sid>X('TabLine',      s:mono_1,        s:syntax_bg,      '')
   call <sid>X('TabLineFill',  s:mono_3,        s:visual_grey,    'none')
