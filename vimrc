@@ -17,6 +17,7 @@ Bundle 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 call vundle#end()
 set guifont=Monaco:h11
@@ -190,6 +191,7 @@ let g:ctrlp_working_path_mode = 'ra'
 
 "airline settings
 let g:airline#extensions#branch#enabled = 0
+let g:airline_theme='simple'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
