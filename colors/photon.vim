@@ -15,7 +15,7 @@ syntax reset
 if exists('g:colors_name')
   unlet g:colors_name
 endif
-let g:colors_name = 'limelight'
+let g:colors_name = 'photon'
 
 if !exists('g:one_allow_italics')
   let g:one_allow_italics = 0
@@ -842,7 +842,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
 endif
 "}}}
 " Public API --------------------------------------------------------------{{{
-function! limelight#highlight(group, fg, bg, attr)
+function!  photon#highlight(group, fg, bg, attr)
   call <sid>X(a:group, a:fg, a:bg, a:attr)
 endfunction
 "}}}
