@@ -58,6 +58,8 @@ set softtabstop=4
 
 set expandtab
 set shiftwidth=4
+
+
 """"""""UI config""""""""""
 
 set showcmd
@@ -129,6 +131,7 @@ function! XTermPasteBegin()
     set paste
     return ""
 endfunction
+
 "set foldlevelstart=10
 """ YCM Settings ''''
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -157,6 +160,9 @@ nnoremap <leader>p "+p
 nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>
+nnoremap <leader>sp :set invpaste paste?<CR>
+set pastetoggle=<leader>sp
+
 
 "Tagbar
 "let g:tagbar_usearrows = 1
@@ -165,6 +171,7 @@ nnoremap <silent> <leader>m :TlistToggle<CR>
 
 hi ColorColumn ctermbg=237 guibg=#3a3a3a
 hi CursorLine ctermbg=237 guibg=#3a3a3a
+hi CursorColumn ctermbg=237 guibg=#3a3a3a
 hi Comment ctermfg=243 guifg=#767676
 hi Visual        ctermfg=black        ctermbg=140        cterm=none        guifg=black   guibg=#af87d7   gui=none
 hi VisualNOS    ctermfg=black        ctermbg=140        cterm=none        guifg=black    guibg=#af87d7    gui=none
