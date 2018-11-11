@@ -14,6 +14,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mkitt/tabline.vim'
 call vundle#end()
 set guifont=Monaco:h11
 "set guifont=Menlo:h11 "set guifont=Iconsolata
@@ -178,9 +179,9 @@ hi todo   ctermfg=73   ctermbg=238 cterm=NONE               guifg=#008787  guibg
 hi Pmenu ctermfg=248   ctermbg=238  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
 hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
 hi MatchParen ctermbg=236 guibg=#303030
-hi TabLineFill ctermfg=249 ctermbg=234
-hi TabLine ctermfg=249 ctermbg=234
-hi TabLineSel ctermfg=235 ctermbg=31
+hi TabLineFill ctermfg=246 ctermbg=238
+hi TabLine ctermfg=246 ctermbg=238
+hi TabLineSel ctermfg=235 ctermbg=239
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
 if $TMUX == ''
@@ -192,8 +193,10 @@ endif
 let g:ctrlp_working_path_mode = 'ra'
 
 "airline settings
-let g:airline#extensions#branch#enabled = 0
 let g:airline_theme='simple'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline_skip_empty_sections = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
