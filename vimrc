@@ -179,9 +179,9 @@ hi todo   ctermfg=73   ctermbg=238 cterm=NONE               guifg=#008787  guibg
 hi Pmenu ctermfg=248   ctermbg=238  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
 hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
 hi MatchParen ctermbg=236 guibg=#303030
-hi TabLineFill ctermfg=246 ctermbg=238
-hi TabLine ctermfg=246 ctermbg=238
-hi TabLineSel ctermfg=235 ctermbg=239
+hi TabLineFill ctermfg=235 ctermbg=238
+hi TabLine ctermfg=235 ctermbg=238
+hi TabLineSel ctermfg=246 ctermbg=239
 "map <silent> <C-p> :!pdflatex % <CR>
 "set clipboard+=unnamedplus
 if $TMUX == ''
