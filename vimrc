@@ -147,8 +147,8 @@ let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 "~~~~~~~~ Key changes.... 
 nnoremap n nzz
 nnoremap N Nzz
-inoremap ;; <Esc>
-vnoremap ;; <Esc>
+inoremap jk <Esc>
+vnoremap jk <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+yy
