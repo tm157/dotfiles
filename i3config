@@ -88,7 +88,7 @@ bindsym $mod+minus split h
 
 # split in vertical orientation
 #bindsym $mod+v split v
-bindsym $mod+\ split v
+bindsym $mod+Shift+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -156,10 +156,10 @@ mode "resize" {
         #bindsym semicolon resize grow width 10 px or 10 ppt
 
         # ==== changed ====
-        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym l resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym h resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -186,13 +186,13 @@ exec setxkbmap -option caps:escape
 exec synclient MaxTapTime=0
 exec xset r rate 250    60    # super fast keyboard cursor delay and rate!
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+exec xset m 4 8 # fixing the speed of the mouse pointer
 
-# Pulse Audio controls
+# ==== Pulse Audio controls ====
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-# # Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'" # increase screen brightness with notification
-bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'" # decrease screen brightness with notification
+# ==== Sreen brightness controls ====
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
