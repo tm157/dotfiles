@@ -117,8 +117,8 @@ augroup ft_python
 augroup END
 " }}}
 """""""""""""""""""""""
-let &t_SI .= "\<Esc>[?2004h"
-let &t_EI .= "\<Esc>[?2004l"
+"let &t_SI .= "\<Esc>[?2004h"
+"let &t_EI .= "\<Esc>[?2004l"
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
@@ -141,9 +141,9 @@ let mapleader=" "
 
 let g:tex_flavor='latex'
 
-let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
-let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+"let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+"let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+"let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 "~~~~~~~~ Key changes.... 
 nnoremap n nzz
 nnoremap N Nzz
@@ -187,7 +187,6 @@ hi TabLineSel ctermfg=246 ctermbg=239
 if $TMUX == ''
     set clipboard+=unnamed
 endif
-
 
 "ctrl-p settings
 let g:ctrlp_working_path_mode = 'ra'
