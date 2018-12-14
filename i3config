@@ -204,7 +204,7 @@ exec synclient MaxTapTime=0
 exec xset r rate 250    60    # super fast keyboard cursor delay and rate!
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
-exec xset m 4 8 # fixing the speed of the mouse pointer
+exec xset m 6 12 # fixing the speed of the mouse pointer
 
 # Fix laptop when you don't have external monitor
 #mode "$fix_laptop_screen" {

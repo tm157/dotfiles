@@ -1,0 +1,16 @@
+[/]
+foreground-color='rgb(178,178,178)'
+encoding='UTF-8'
+rewrap-on-resize=true
+palette=['rgb(58,58,58)', 'rgb(213,72,59)', 'rgb(56,188,86)', 'rgb(207,173,0)', 'rgb(65,122,179)', 'rgb(143,59,153)', 'rgb(0,167,170)', 'rgb(178,178,178)', 'rgb(58,58,58)', 'rgb(213,72,59)', 'rgb(56,188,86)', 'rgb(207,173,0)', 'rgb(65,122,179)', 'rgb(143,59,153)', 'rgb(0,167,170)', 'rgb(178,178,178)']
+visible-name='excelsior'
+use-system-font=false
+use-theme-colors=false
+font='Monaco 10'
+use-theme-transparency=false
+allow-bold=true
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#CCCCCCCCCCCC'
+background-color='rgb(48,48,48)'
+audible-bell=false
