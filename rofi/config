@@ -1,0 +1,11 @@
+rofi.modi: run,window,ssh
+rofi.lines: 5
+rofi.drun-icon-theme: Pop
+rofi.show-icons: true
+rofi.sidebar-mode: true
+rofi.m: -4
+rofi.font: Inconsolata 30
+rofi.fullscreen: False
+rofi.fake-transparency: True
+rofi.padding: 130
+rofi.theme: /home/tanya/.config/rofi/tm157.rasi
