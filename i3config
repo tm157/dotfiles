@@ -40,7 +40,7 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec rofi -show run -lines 5
 bindsym $mod+Tab exec rofi -show window
-bindsym $mod+Shift+s exec rofi -show ssh
+bindsym $mod+Shift+d exec rofi -show ssh
 
 
 # There also is the (new) i3-dmenu-desktop which only displays applications

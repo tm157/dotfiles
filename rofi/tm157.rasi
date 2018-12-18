@@ -6,7 +6,7 @@
     background-color:            #2f343f;
     lightbg:                     #2f343f;
     red:                         #91083a;
-    orange:                      #faa41a; 
+    orange:                      #db3939; 
     blue:                        #614b87; 
 
     selected-normal-foreground:  @foreground;
