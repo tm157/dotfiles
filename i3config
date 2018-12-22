@@ -42,6 +42,10 @@ bindsym $mod+d exec rofi -show run -lines 5
 bindsym $mod+Tab exec rofi -show window
 bindsym $mod+Shift+d exec rofi -show ssh
 
+# ==== Get rid of irritating background ====
+new_window normal 0 px
+new_float normal 0
+hide_edge_borders both
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -179,10 +183,15 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+#bar {
+        #status_command i3status
+        #tray_output primary
+#}
+
 bar {
-        status_command i3status
-        tray_output primary
+        status_command i3blocks -c ~/.config/i3blocks/config
 }
+
 
 # ==== Take screenshot ====
 set $mode_screenshot ScreenShot (a) all, (s) select
@@ -223,3 +232,4 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # ==== Sreen brightness controls ====
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
+
