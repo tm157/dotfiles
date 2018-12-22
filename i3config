@@ -11,9 +11,28 @@
 
 set $mod Mod1
 
+
+# ==== base colors ====
+set $base00 #101218
+set $base01 #1c4a6a
+set $base02 #121212
+set $base02A #262626
+set $base03 #949494
+set $base04 #C0C5CE
+set $base05 #d1d4e0
+set $base06 #C9CCDB
+set $base07 #bcbcbc
+set $base08 #91083a
+set $base09 #f99170
+set $base0A #ffefcc
+set $base0B #a5ffe1
+set $base0C #97e0ff
+set $base0D #97bbf7
+set $base0E #c0b7f9
+set $base0F #8a8a8a
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:Roboto 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -183,13 +202,36 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
 #bar {
-        #status_command i3status
-        #tray_output primary
+        #status_command i3blocks -c ~/.config/i3blocks/config
 #}
 
+# Widow Colours
+#                         border  background text    indicator
+  client.focused          $base02A $base01    $base07 $base0F
+  client.focused_inactive $base02A $base02A    $base03 $base0F
+  client.unfocused        $base02A $base02A    $base03 $base0F
+  client.urgent           $base02A $base08    $base00 $base0F
+
+
+
 bar {
+        #status_command i3status
         status_command i3blocks -c ~/.config/i3blocks/config
+        strip_workspace_numbers yes
+        #bindsym button4 nop
+        #bindsym button5 nop
+        colors {
+              separator $base03
+              background $base02
+              statusline $base05
+#                               border  background text
+              focused_workspace  $base02 $base01    $base03
+              active_workspace   $base02 $base02    $base03
+              inactive_workspace $base02 $base02    $base03
+              urgent_workspace   $base02 $base02    $base08
+    }
 }
 
 
