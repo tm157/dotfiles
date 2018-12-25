@@ -14,7 +14,9 @@ set $mod Mod1
 
 # ==== base colors ====
 set $base00 #101218
+# Blue color
 set $base01 #1c4a6a
+# Two different shades of black
 set $base02 #121212
 set $base02A #262626
 set $base03 #949494
@@ -22,7 +24,8 @@ set $base04 #C0C5CE
 set $base05 #d1d4e0
 set $base06 #C9CCDB
 set $base07 #bcbcbc
-set $base08 #d70000
+# Red color
+set $base08 #ff0000 
 set $base09 #f99170
 set $base0A #ffefcc
 set $base0B #a5ffe1
@@ -61,7 +64,7 @@ bindsym $mod+d exec rofi -show run -lines 5
 bindsym $mod+Tab exec rofi -show window
 bindsym $mod+Shift+d exec rofi -show ssh
 
-# ==== Get rid of irritating background ====
+# ==== Get rid of irritating borders ====
 new_window normal 0 px
 new_float normal 0
 hide_edge_borders both
@@ -200,13 +203,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-
-#bar {
-        #status_command i3blocks -c ~/.config/i3blocks/config
-#}
-
 # Widow Colours
 #                         border  background text    indicator
   client.focused          $base02A $base01    $base07 $base0F
@@ -259,13 +255,13 @@ exec --no-startup-id blueman-applet
 exec xset m 6 12 # fixing the speed of the mouse pointer
 
 # setup background
-exec_always --no-startup-id feh --bg-scale /home/tanya/acads/wallpapers/wallpaper1.png
+exec_always --no-startup-id feh --bg-scale /home/tanya/acads/wallpapers/astronaut.jpg
 
 # Fix laptop when you don't have external monitor
 #mode "$fix_laptop_screen" {
     #exec xrandr --auto, exec xrandr --output eDP-1 --scale 1.25x1.25 --mode 2560x1440 --panning 3200x1800+0+0
 #}
-bindsym $mod+Shift+m exec xrandr --auto, exec xrandr --output eDP-1 --scale 1.25x1.25 --mode 2560x1440 --panning 3200x1800+0+0 --output HDMI-1 --off
+bindsym $mod+Shift+m exec xrandr --auto, exec xrandr --output eDP-1 --scale 1.25x1.25 --mode 2560x1440 --panning 3200x1800+0+0 --output HDMI-1 --off, feh --bg-scale /home/tanya/acads/wallpapers/astronaut.jpg
 
 # ==== Pulse Audio controls ====
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume

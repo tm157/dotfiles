@@ -3,11 +3,12 @@
  */
 * {
     text-color:                  #f3f4f5;
-    background-color:            #2f343f;
-    lightbg:                     #2f343f;
+    background-color:            #262626;
+    lightbg:                     #262626;
     red:                         #91083a;
     orange:                      #b52e2e; 
-    blue:                        #614b87; 
+    /*blue:                        #614b87; */
+    blue:                        #1c4a6a; 
 
     selected-normal-foreground:  @foreground;
     normal-foreground:           @foreground;
