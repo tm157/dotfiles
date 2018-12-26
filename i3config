@@ -33,10 +33,11 @@ set $base0C #97e0ff
 set $base0D #97bbf7
 set $base0E #c0b7f9
 set $base0F #8a8a8a
+
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Roboto 8
-
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -65,7 +66,6 @@ bindsym $mod+Tab exec rofi -show window
 bindsym $mod+Shift+d exec rofi -show ssh
 
 # ==== Get rid of irritating borders ====
-new_window normal 0 px
 new_float normal 0
 hide_edge_borders both
 
