@@ -1,0 +1,48 @@
+Xft.dpi: 192
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xf.rgba: rgb
+
+! Start with the urxvt confi
+URxvt.scrollBar: false
+URxvt.font: xft:Consolas:size=11
+
+
+URxvt*foreground: #b2b2b2
+URxvt*background: #303030
+URxvt*CursorColor: #a8a8a8
+
+! black
+URxvt*color0:       #303030
+URxvt*color8:       #303030
+
+! red
+URxvt*color1:       #D5483B
+URxvt*color9:       #D5483B
+
+!green
+URxvt*color2:       #38BC56
+URxvt*color10:      #38BC56
+
+!yellow
+URxvt*color3:       #CFAD00
+URxvt*color11:      #CFAD00
+
+!blue
+URxvt*color4:       #417AB3
+URxvt*color12:      #417AB3
+
+!magenta
+URxvt*color5:       #8F3B99
+URxvt*color13:      #8F3B99
+
+!cyan
+URxvt*color6:       #00A7AA
+URxvt*color14:      #00A7AA
+
+!white
+URxvt*color7:       #bcbcbc
+URxvt*color15:      #bcbcbc
