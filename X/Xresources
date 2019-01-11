@@ -4,16 +4,25 @@ Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
 Xft.hinting: 1
 Xft.antialias: 1
-Xf.rgba: rgb
+Xft.rgba: rgb
 
-! Start with the urxvt confi
-URxvt.scrollBar: false
-URxvt.font: xft:Consolas:size=11
 
+URxvt*scrollBar: false
+URxvt*font: xft:Monospace:size=10:antialias=true
+URxvt*allow_bold: true
+XTerm*faceName: Monospace
+XTerm*faceSize: 10
+URxvt*letterSpace: -1
 
 URxvt*foreground: #b2b2b2
 URxvt*background: #303030
 URxvt*CursorColor: #a8a8a8
+URxvt*cursorBlink: true
+URxvt*buffered: true
+URxvt*borderless: 1
+URxvt*saveLines: 5000
+
+
 
 ! black
 URxvt*color0:       #303030
@@ -46,3 +55,10 @@ URxvt*color14:      #00A7AA
 !white
 URxvt*color7:       #bcbcbc
 URxvt*color15:      #bcbcbc
+
+URxvt.perl-ext-common: default,matcher,clipboard
+urxvt*perl-lib:            /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:        default,matcher
+urxvt*urlLauncher:        /usr/bin/firefox
+urxvt*matcher.button:        1
+urxvt*matcher.pattern.1:   \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]

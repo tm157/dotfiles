@@ -1,10 +1,10 @@
-rofi.modi: run,window,ssh
+rofi.modi: drun,window,ssh
 rofi.lines: 5
 rofi.drun-icon-theme: Pop
 rofi.show-icons: true
 rofi.sidebar-mode: true
 rofi.m: -4
-rofi.font: Inconsolata 30
+rofi.font: Roboto 26
 rofi.fullscreen: False
 rofi.fake-transparency: True
 rofi.padding: 130

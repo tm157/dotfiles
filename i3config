@@ -26,7 +26,7 @@ set $base06 #C9CCDB
 set $base07 #bcbcbc
 # Red color
 set $base08 #ff0000 
-set $base09 #f99170
+set $base09 #f99j70
 set $base0A #ffefcc
 set $base0B #a5ffe1
 set $base0C #97e0ff
@@ -53,8 +53,8 @@ font pango:Roboto 8
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Shift+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -62,9 +62,9 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 
-bindsym $mod+d exec rofi -show run -lines 5
+bindsym $mod+d exec rofi -show drun -lines 5
 bindsym $mod+Tab exec rofi -show window
-bindsym $mod+Shift+d exec rofi -show ssh
+bindsym $mod+Shift+d exec rofi -show ssh 
 
 # ==== Get rid of irritating borders ====
 new_float normal 0
