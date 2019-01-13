@@ -247,23 +247,22 @@ bindsym $mod+Home mode "$mode_screenshot"
 
 # ==== My changes ====
 # i3 lock
-bindsym $mod+Shift+x exec i3lock --color=475263
+bindsym $mod+Shift+x exec i3lock --color=001a33
 exec setxkbmap -option caps:escape
 exec synclient MaxTapTime=0
 exec xset r rate 250    60    # super fast keyboard cursor delay and rate!
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec xset m 6 12 # fixing the speed of the mouse pointer
-exec compton -b
+#exec compton -b
 
 # setup background
 exec_always --no-startup-id feh --bg-scale /home/tanya/acads/wallpapers/astronaut.jpg
 exec_always --no-startup-id xautolock -time 5 -locker "systemctl syspend"
+exec --no-startup-id compton --config ~/.config/compton.conf -b
+
 
 # Fix laptop when you don't have external monitor
-#mode "$fix_laptop_screen" {
-    #exec xrandr --auto, exec xrandr --output eDP-1 --scale 1.25x1.25 --mode 2560x1440 --panning 3200x1800+0+0
-#}
 bindsym $mod+Shift+m exec xrandr --auto, exec xrandr --output eDP-1 --scale 1.25x1.25 --mode 2560x1440 --panning 3200x1800+0+0 --output HDMI-1 --off, feh --bg-scale /home/tanya/acads/wallpapers/astronaut.jpg
 
 # ==== Pulse Audio controls ====
