@@ -135,7 +135,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 "set foldnestmax=10
 "set nowrap
-""""""leader"""""
+"==== Leader Mapping ====
 let mapleader=" "
 "set clipboard=unnamed
 
@@ -144,11 +144,11 @@ let g:tex_flavor='latex'
 "let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 "let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
 "let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-"~~~~~~~~ Key changes.... 
+" ==== Key Bindings ====
 nnoremap n nzz
 nnoremap N Nzz
 inoremap jk <Esc>
-"vnoremap jk <Esc>
+vnoremap <leader>jk <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+yy
