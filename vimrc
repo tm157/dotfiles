@@ -156,12 +156,9 @@ nnoremap <leader>p "+p
 nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>
-nnoremap <leader>sp :set invpaste paste?<CR>
-
-"Tagbar
+"nnoremap <leader>sp :set invpaste paste?<CR>
 "let g:tagbar_usearrows = 1
 nnoremap <silent> <leader>m :TlistToggle<CR>
-
 
 hi ColorColumn ctermbg=237 guibg=#3a3a3a
 hi CursorLine ctermbg=237 guibg=#3a3a3a
