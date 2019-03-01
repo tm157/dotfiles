@@ -157,8 +157,6 @@ nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>
 nnoremap <leader>sp :set invpaste paste?<CR>
-set pastetoggle=<leader>sp
-
 
 "Tagbar
 "let g:tagbar_usearrows = 1
