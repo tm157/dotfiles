@@ -148,7 +148,7 @@ let g:tex_flavor='latex'
 nnoremap n nzz
 nnoremap N Nzz
 inoremap jk <Esc>
-vnoremap <leader>jk <Esc>
+vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+yy
