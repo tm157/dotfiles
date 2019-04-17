@@ -107,29 +107,16 @@ set statusline=
 """""""NerdTree fix"""""""""""""
 let NERDTreeIgnore = ['\.pyc$']
 
-"""""""""""""""""""""""'
-" Python filetype settings... 
+"==== Python filetype settings ====
 augroup ft_python
     autocmd!
     autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
     autocmd FileType python     vnoremap <buffer> <localleader>c :<c-u>call CommentOutVisualBlock("#")<cr>
     autocmd FileType python setlocal colorcolumn=80
 augroup END
-" }}}
-"""""""""""""""""""""""
-"let &t_SI .= "\<Esc>[?2004h"
-"let &t_EI .= "\<Esc>[?2004l"
-
-inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
-
-function! XTermPasteBegin()
-    set pastetoggle=<Esc>[201~
-    set paste
-    return ""
-endfunction
 
 "set foldlevelstart=10
-""" YCM Settings ''''
+"==== YCM Settings ====
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
@@ -156,25 +143,24 @@ nnoremap <leader>p "+p
 nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>
-"nnoremap <leader>sp :set invpaste paste?<CR>
 "let g:tagbar_usearrows = 1
 nnoremap <silent> <leader>m :TlistToggle<CR>
 
-hi ColorColumn ctermbg=237 guibg=#3a3a3a
-hi CursorLine ctermbg=237 guibg=#3a3a3a
-hi CursorColumn ctermbg=237 guibg=#3a3a3a
-hi Comment ctermfg=243 guifg=#767676
+hi ColorColumn ctermbg=236 guibg=#3a3a3a
+hi CursorLine ctermbg=236 guibg=#3a3a3a
+hi CursorColumn ctermbg=236 guibg=#3a3a3a
+hi Comment ctermfg=242 guifg=#6c6c6c
 hi Visual        ctermfg=black        ctermbg=140        cterm=none        guifg=black   guibg=#af87d7   gui=none
 hi VisualNOS    ctermfg=black        ctermbg=140        cterm=none        guifg=black    guibg=#af87d7    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
-hi Normal guibg=#303030 ctermbg=236 ctermfg=249 guifg=#b2b2b2
+hi Normal guibg=#262626 ctermbg=235 ctermfg=248 guifg=#a8a8a8
 hi clear todo
 hi todo   ctermfg=73   ctermbg=238 cterm=NONE               guifg=#008787  guibg=#444444  gui=NONE
-hi Pmenu ctermfg=248   ctermbg=238  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
+hi Pmenu ctermfg=247   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
 hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
-hi MatchParen ctermbg=236 guibg=#303030
-hi TabLineFill ctermfg=235 ctermbg=238
+hi MatchParen ctermbg=236 guibg=#3a3a3a 
+hi TabLineFill ctermfg=234 ctermbg=237
 hi TabLine ctermfg=235 ctermbg=238
 hi TabLineSel ctermfg=246 ctermbg=239
 "map <silent> <C-p> :!pdflatex % <CR>
