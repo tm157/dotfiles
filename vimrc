@@ -60,7 +60,7 @@ set shiftwidth=4
 
 set showcmd
 
-set cursorline
+"set cursorline
 
 set showmatch
 
