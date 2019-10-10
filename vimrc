@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'christoomey/vim-tmux-navigator' 
+Plugin 'christoomey/vim-tmux-navigator'
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -29,7 +29,7 @@ syntax enable
 set modelines=0
 set ttyfast         "draw faster
 set ruler
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 set path+=**
 
 set noswapfile
@@ -101,7 +101,7 @@ set ignorecase
 set smartcase
 
 """""" Status Line""""
-set laststatus=2 
+set laststatus=2
 set statusline=
 "set colorcolumn=80
 """""""NerdTree fix"""""""""""""
@@ -139,12 +139,14 @@ vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+yy
-nnoremap <leader>p "+p 
+nnoremap <leader>p "+p
 nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>
 "let g:tagbar_usearrows = 1
 nnoremap <silent> <leader>m :TlistToggle<CR>
+nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
 
 hi ColorColumn ctermbg=236 guibg=#3a3a3a
 hi CursorLine ctermbg=236 guibg=#3a3a3a
@@ -159,7 +161,7 @@ hi clear todo
 hi todo   ctermfg=73   ctermbg=238 cterm=NONE               guifg=#008787  guibg=#444444  gui=NONE
 hi Pmenu ctermfg=247   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
 hi PmenuSel ctermfg=237  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
-hi MatchParen ctermbg=236 guibg=#3a3a3a 
+hi MatchParen ctermbg=236 guibg=#3a3a3a
 hi TabLineFill ctermfg=234 ctermbg=236
 hi TabLine ctermfg=235 ctermbg=236
 hi TabLineSel ctermfg=66 ctermbg=236
@@ -191,7 +193,7 @@ let g:ctrlp_custom_ignore = {
 if has("autocmd")
       au VimEnter,InsertLeave * silent execute '!echo -ne "\e[2 q"' | redraw!
         au InsertEnter,InsertChange *
-                    \ if v:insertmode == 'i' | 
+                    \ if v:insertmode == 'i' |
                     \   silent execute '!echo -ne "\e[6 q"' | redraw! |
                     \ elseif v:insertmode == 'r' |
                     \   silent execute '!echo -ne "\e[4 q"' | redraw! |
