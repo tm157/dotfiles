@@ -1,0 +1,48 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    // {
+    //     "key": "cmd+shift+j",
+    //     "command": "workbench.action.terminal.focus",
+    //     "when": "!terminalFocus"
+    // },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "` \\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+{
+    "key": "alt+j",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus"
+},
+{
+    "key": "alt+h",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalFocus"
+},
+{
+    "key": "alt+l",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
+},
+{
+    "key": "alt+k",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus"
+},
+]

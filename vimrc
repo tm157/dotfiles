@@ -17,7 +17,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mkitt/tabline.vim'
 call vundle#end()
 set guifont=Monaco:h11
-"set guifont=Menlo:h11 "set guifont=Iconsolata
 set background=dark
 colorscheme photon
 """"" you complete me binings"""""""

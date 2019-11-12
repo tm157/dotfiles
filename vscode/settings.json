@@ -1,0 +1,90 @@
+{
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
+  "editor.minimap.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.parameterHints.enabled": false,
+  "python.linting.pylintEnabled": false,
+  "path-intellisense.absolutePathToWorkspace": false,
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "editor.snippetSuggestions": "none",
+  "[python]":{
+    "editor.rulers": [80],
+    "editor.autoClosingBrackets": "never",
+  },
+  "editor.formatOnPaste": true,
+    "vim.leader": "<Space>",
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+      {
+        "before": ["j", "k"],
+        "after": ["<ESC>"]
+      },
+    ],
+    "vim.visualModeKeyBindings":[
+          {
+            "before": ["<leader>","c","<space>"],
+            "commands": ["editor.action.commentLine"],
+          }
+        ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+          {
+            "before": ["<leader>","c","<space>"],
+            "commands": ["editor.action.commentLine"],
+          },
+        {
+            "before": ["<Leader>", "j"],
+            "after": ["C-d"] 
+        },
+        {
+            "before": ["<Leader>", ";", ";"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<Leader>", "k"],
+            "after": ["C-u"]
+        },
+        {
+          "before": ["<C-h>"],
+          "after": ["<C-w>", "h"],
+          "when": "vim.active && vim.use<C-w>",
+        },
+        {
+          "before": ["<C-j>"],
+          "after": ["<C-w>", "j"],
+          "when": "vim.active && vim.use<C-w>",
+        },
+        {
+          "before": ["<C-k>"],
+          "after": ["<C-w>", "k"],
+          "when": "vim.active && vim.use<C-w>",
+        },
+        {
+          "before": ["<C-l>"],
+          "after": ["<C-w>", "l"]
+        },
+        {
+            "before": ["<Leader>", "t", "t"],
+            "commands": [":tabnew"]
+          },
+        {
+          "before":["Z", "Z"], 
+          "commands": [":wq"]
+        }
+    ],
+    "workbench.colorTheme": "Tomorrow Night Eighties",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#262626",
+      "statusBar.noFolderBackground": "#212121",
+      "statusBar.debuggingBackground": "#263238"
+    },
+    "editor.largeFileOptimizations": false,
+    "terminal.integrated.inheritEnv": false,
+    "workbench.startupEditor": "welcomePage",
+    "python.pythonPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
+    
+}
