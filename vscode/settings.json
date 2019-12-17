@@ -6,12 +6,14 @@
   "editor.parameterHints.enabled": false,
   "python.linting.pylintEnabled": false,
   "path-intellisense.absolutePathToWorkspace": false,
+  "workbench.editor.enablePreview":false,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
   "editor.snippetSuggestions": "none",
   "[python]":{
     "editor.rulers": [80],
     "editor.autoClosingBrackets": "never",
+    "editor.formatOnPaste": false,
   },
   "editor.formatOnPaste": true,
     "vim.leader": "<Space>",
@@ -73,7 +75,17 @@
         {
           "before":["Z", "Z"], 
           "commands": [":wq"]
-        }
+        },
+        {
+          "before":["<Leader>", "?"], 
+          "commands": ["editor.action.goToDeclaration"],
+          "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+        },
+        {
+          "before": ["<Leader>", "/"],
+          "commands": ["editor.action.peekDefinition"],
+          "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+        },
     ],
     "workbench.colorTheme": "Tomorrow Night Eighties",
     "latex-workshop.view.pdf.viewer": "tab",
@@ -85,6 +97,6 @@
     "editor.largeFileOptimizations": false,
     "terminal.integrated.inheritEnv": false,
     "workbench.startupEditor": "welcomePage",
-    "python.pythonPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
+    "python.pythonPath": "/home/mohit/anaconda3/bin/python",
     
 }

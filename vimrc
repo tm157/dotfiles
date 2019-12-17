@@ -155,7 +155,7 @@ hi Visual        ctermfg=black        ctermbg=140        cterm=none        guifg
 hi VisualNOS    ctermfg=black        ctermbg=140        cterm=none        guifg=black    guibg=#af87d7    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
-hi Normal guibg=#262626 ctermbg=235 ctermfg=248 guifg=#a8a8a8
+hi Normal guibg=#262626 ctermbg=235 ctermfg=250 guifg=#c7c7c7
 hi clear todo
 hi todo   ctermfg=73   ctermbg=238 cterm=NONE               guifg=#008787  guibg=#444444  gui=NONE
 hi Pmenu ctermfg=247   ctermbg=237  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
