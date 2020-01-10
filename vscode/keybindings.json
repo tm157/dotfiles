@@ -46,8 +46,31 @@
     "when": "terminalFocus"
 },
 {
-    "key": "cmd+escape",
+    "key": "cmd+backspace",
     "command": "notifications.clearAll",
     "when": "editorTextFocus"
+},
+{
+    "key": "` x",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+},
+{
+    "key": "` n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+},
+{
+    "key": "` 1",
+    "command": "workbench.action.terminal.focusAtIndex1",
+    "when": "terminalFocus"
+},
+{
+    "key": "shift+cmd+b",
+    "command": "-workbench.action.tasks.build"
+},
+{
+    "key": "shift+cmd+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
 },
 ]

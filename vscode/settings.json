@@ -99,7 +99,9 @@
     "terminal.integrated.inheritEnv": false,
     "workbench.startupEditor": "welcomePage",
     "python.pythonPath": "/home/mohit/anaconda3/bin/python",
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Tomorrow Night Eighties",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "window.zoomLevel": 0,
     
 }
