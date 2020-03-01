@@ -139,6 +139,7 @@ map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
 vnoremap <leader>y "+yy
 nnoremap <leader>p "+p
+"=== useful ===
 nnoremap <leader>l :e#<cr>
 nnoremap <leader>k <C-u>
 nnoremap <leader>j <C-d>

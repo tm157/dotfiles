@@ -7,6 +7,8 @@
   "python.linting.pylintEnabled": false,
   "path-intellisense.absolutePathToWorkspace": false,
   "workbench.editor.enablePreview":false,
+  // open already opened file in any group
+  "workbench.editor.revealIfOpen": true,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
   "editor.snippetSuggestions": "none",
