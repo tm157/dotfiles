@@ -13,6 +13,8 @@
   "editor.wrappingIndent": "indent",
   "editor.snippetSuggestions": "none",
   "editor.occurrencesHighlight": false,
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.view.pdf.viewer": "tab",
   "[python]":{
     "editor.rulers": [80],
     "editor.autoClosingBrackets": "never",
@@ -91,7 +93,6 @@
           "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
         },
     ],
-    "latex-workshop.view.pdf.viewer": "tab",
     "workbench.colorCustomizations": {
       "statusBar.background": "#262626",
       "statusBar.noFolderBackground": "#212121",
@@ -100,10 +101,8 @@
     "editor.largeFileOptimizations": false,
     "terminal.integrated.inheritEnv": false,
     "workbench.startupEditor": "welcomePage",
-    "python.pythonPath": "/home/mohit/anaconda3/bin/python",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Tomorrow Night Eighties",
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "window.zoomLevel": 0,
-    
 }

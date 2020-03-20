@@ -73,4 +73,18 @@
     "key": "shift+cmd+b",
     "command": "workbench.action.toggleActivityBarVisibility"
 },
+{
+    "key": "ctrl+enter",
+    "command": "-python.datascience.execSelectionInteractive",
+},
+{
+    "key": "cmd+enter",
+    "command": "latex-workshop.build",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+},
+{
+    "key": "alt+cmd+b",
+    "command": "-latex-workshop.build",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+}
 ]
