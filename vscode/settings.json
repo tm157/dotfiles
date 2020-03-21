@@ -92,6 +92,12 @@
           "commands": ["editor.action.peekDefinition"],
           "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
         },
+        {
+          "before": ["<Leader>", "s"],
+          "commands": ["latex-workshop.build"],
+          "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+
+        }
     ],
     "workbench.colorCustomizations": {
       "statusBar.background": "#262626",
