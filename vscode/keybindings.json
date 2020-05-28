@@ -5,11 +5,6 @@
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
 },
-// {
-//     "key": "cmd+shift+j",
-//     "command": "workbench.action.terminal.focus",
-//     "when": "!terminalFocus"
-// },
 {
     "key": "ctrl+l",
     "command": "workbench.action.terminal.focusNextPane",
@@ -83,8 +78,21 @@
     "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
 },
 {
+    "key": "cmd+s",
+    "command": "latex-workshop.build",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+},
+{
     "key": "alt+cmd+b",
     "command": "-latex-workshop.build",
     "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
-}
+},{
+    "key": "` \\",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+},{
+    "key": "` -",
+    "command": "workbench.action.splitEditorOrthogonal",
+    "when": "editorTextFocus"
+},
 ]

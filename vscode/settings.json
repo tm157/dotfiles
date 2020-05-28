@@ -92,12 +92,6 @@
           "commands": ["editor.action.peekDefinition"],
           "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
         },
-        {
-          "before": ["<Leader>", "s"],
-          "commands": ["latex-workshop.build"],
-          "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
-
-        }
     ],
     "workbench.colorCustomizations": {
       "statusBar.background": "#262626",
@@ -107,8 +101,9 @@
     "editor.largeFileOptimizations": false,
     "terminal.integrated.inheritEnv": false,
     "workbench.startupEditor": "welcomePage",
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Tomorrow Night Eighties",
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "window.zoomLevel": 0,
+    "python.pythonPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
 }
