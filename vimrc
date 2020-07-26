@@ -150,14 +150,13 @@ nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :noh
 
 
 hi ColorColumn ctermbg=237 guibg=#3a3a3a
-hi CursorLine ctermbg=236 guibg=#3a3a3a
 hi CursorColumn ctermbg=236 guibg=#3a3a3a
 hi Comment ctermfg=242 guifg=#6c6c6c
 hi Visual        ctermfg=black        ctermbg=140        cterm=none        guifg=black   guibg=#af87d7   gui=none
 hi VisualNOS    ctermfg=black        ctermbg=140        cterm=none        guifg=black    guibg=#af87d7    gui=none
 hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
-hi Normal guibg=#303030 ctermbg=236 ctermfg=250 guifg=#c7c7c7
+"hi Normal guibg=#303030 ctermbg=236 ctermfg=250 guifg=#c7c7c7
 hi clear todo
 hi todo   ctermfg=73   ctermbg=239 cterm=NONE               guifg=#008787  guibg=#444444  gui=NONE
 hi Pmenu ctermfg=247   ctermbg=238  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
