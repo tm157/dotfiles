@@ -15,10 +15,11 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mkitt/tabline.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
 call vundle#end()
 set guifont=Monaco:h11
 set background=dark
-colorscheme photon
+colorscheme Tomorrow-Night
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
  "

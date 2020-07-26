@@ -101,9 +101,9 @@
     "editor.largeFileOptimizations": false,
     "terminal.integrated.inheritEnv": false,
     "workbench.startupEditor": "welcomePage",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Tomorrow Night Eighties",
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "window.zoomLevel": 0,
-    "python.pythonPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
+    "python.defaultInterpreterPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
 }
