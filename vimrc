@@ -15,12 +15,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mkitt/tabline.vim'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'morhetz/gruvbox'
 call vundle#end()
 set guifont=Monaco:h11
 set background=dark
-"colorscheme Tomorrow-Night-Eighties
 colorscheme gruvbox
 """"" you complete me binings"""""""
  "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
@@ -163,7 +161,7 @@ hi Normal ctermfg=250 guifg=#bcbcbc
 hi clear todo
 hi todo   ctermfg=73   ctermbg=239 cterm=NONE               guifg=#008787  guibg=#444444  gui=NONE
 hi Pmenu ctermfg=247   ctermbg=238  cterm=NONE          guifg=#a8a8a8      guibg=#444444     gui=NONE
-hi PmenuSel ctermfg=238  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
+"hi PmenuSel ctermfg=238  ctermbg=73    cterm=NONE          guifg=#5fafaf      guibg=#008787   gui=NONE
 hi MatchParen ctermbg=237 guibg=#3a3a3a
 hi TabLineFill ctermfg=234 ctermbg=236
 hi TabLine ctermfg=235 ctermbg=236
