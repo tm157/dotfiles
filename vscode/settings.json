@@ -15,10 +15,21 @@
   "editor.occurrencesHighlight": false,
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.view.pdf.viewer": "tab",
+  "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+  // "terminal.integrated.fontFamily": "Consolas, Inconsolata, monospace",
   "[python]":{
-    "editor.rulers": [80],
+    "editor.rulers": [80, 100],
+    "editor.renderIndentGuides": true,
     "editor.autoClosingBrackets": "never",
     "editor.formatOnPaste": false,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace"
+    // "editor.fontFamily": "Consolas, Inconsolata, monospace",
+    // "editor.fontSize": 13
+  },
+  "[latex]":{
+    "editor.rulers": [100],
+    "editor.fontFamily": "Monaco, 'Courier New', monospace"
+    // "editor.fontFamily": "DejaVu Sans Mono, 'Courier New', monospace"
   },
   "editor.formatOnPaste": true,
     "vim.leader": "<Space>",
@@ -28,7 +39,7 @@
     "vim.searchHighlightColor": "#3B4158",
     "vim.insertModeKeyBindingsNonRecursive": [
       {
-        "before": ["j", "k"],
+        "before": [";", ";"],
         "after": ["<ESC>"]
       },
     ],
@@ -101,9 +112,14 @@
     "editor.largeFileOptimizations": false,
     "terminal.integrated.inheritEnv": false,
     "workbench.startupEditor": "welcomePage",
-    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Tomorrow Night Eighties",
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
-    "window.zoomLevel": 0,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
     "python.defaultInterpreterPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+    "workbench.iconTheme": "material-icon-theme",
 }

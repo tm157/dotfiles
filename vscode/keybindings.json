@@ -11,7 +11,7 @@
     "when": "terminalFocus"
 },
 {
-    "key": "` \\",
+    "key": "ctrl+\\",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus"
 },
@@ -46,17 +46,17 @@
     "when": "editorTextFocus"
 },
 {
-    "key": "` x",
+    "key": "ctrl+x",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
 },
 {
-    "key": "` n",
+    "key": "ctrl+n",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
 },
 {
-    "key": "` 1",
+    "key": "ctrl+1",
     "command": "workbench.action.terminal.focusAtIndex1",
     "when": "terminalFocus"
 },
@@ -87,13 +87,14 @@
     "command": "-latex-workshop.build",
     "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
 },
-// {
-//     "key": "` \\",
-//     "command": "workbench.action.splitEditor",
-//     "when": "editorTextFocus"
-// },{
-//     "key": "` -",
-//     "command": "workbench.action.splitEditorOrthogonal",
-//     "when": "editorTextFocus"
-// },
+{
+    "key": "ctrl+\\",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+-",
+    "command": "workbench.action.splitEditorOrthogonal",
+    "when": "editorTextFocus"
+},
 ]

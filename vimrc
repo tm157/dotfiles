@@ -134,7 +134,8 @@ let g:tex_flavor='latex'
 " ==== Key Bindings ====
 nnoremap n nzz
 nnoremap N Nzz
-inoremap jk <Esc>
+"inoremap jk <Esc>
+inoremap ;; <Esc>
 vnoremap ;; <Esc>
 map <silent> <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>;; :nohlsearch <cr>
