@@ -1,0 +1,123 @@
+###OK & FEEL ###
+set-option -g default-shell /bin/bash
+
+unbind C-b
+set -g prefix `
+bind-key ` send-prefix
+setw -g xterm-keys on
+
+set -g base-index 1
+set -g default-terminal "xterm-256color" 
+set -g default-terminal "screen-256color"
+
+#set -g default-command 'reattach-to-user-namespace $SHELL --login'
+
+##default statusbar colors
+#set-option -g status-bg colour235
+#set-option -g status-fg colour7
+set-option -g status-style fg=colour7,bg=colour235
+#
+# default window title colors
+set-option -g window-status-style bg=default,fg=colour6
+
+#
+#active window title colors
+set-option -g window-status-current-style fg=colour14,bg=colour241
+
+#set -g pane-border-fg colour238
+#set -g pane-active-border-fg colour6
+
+set -g pane-border-style fg=colour238
+set -g pane-active-border-style fg=colour6
+
+# Enable mouse mode
+set -g mouse off
+set-option -g renumber-windows on
+
+# Set the title bar
+setw -g monitor-activity on
+set -g set-titles on
+set -g set-titles-string '#H'
+#set -g window-status-format '#I:#(pwd="#{pane_current_path}"; echo ${pwd####*/})#F'
+#set -g window-status-current-format '#I:#(pwd="#{pane_current_path}"; echo ${pwd####*/})#F'
+
+
+# Use vim keybindings in copy mode
+unbind '"'
+unbind %
+unbind \\
+
+# status bar updates every 15s by default**, change to 1s here 
+# (this step is optional - a lower latency might have negative battery/cpu usage impacts)
+set -g status-interval 1
+
+#window-status-activity-style none
+#window-status-bell-style none
+########################################################################
+# Pane management / navigation
+# navigation with C-{h,j,k,l} -- NO PREFIX
+# https://gist.github.com/mislav/5189704
+# Smart pane switching with awareness of Vim splits.
+# See: https://github.com/christoomey/vim-tmux-navigator
+is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
+    | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
+bind-key -n 'C-h' if-shell "$is_vim" "send-keys C-h"  "select-pane -L"
+bind-key -n 'C-j' if-shell "$is_vim" "send-keys C-j"  "select-pane -D"
+bind-key -n 'C-k' if-shell "$is_vim" "send-keys C-k"  "select-pane -U"
+bind-key -n 'C-l' if-shell "$is_vim" "send-keys C-l"  "select-pane -R"
+bind-key -n 'C-\' if-shell "$is_vim" "send-keys 'C-\\'" "select-pane -l"
+bind-key -T copy-mode-vi 'C-h' select-pane -L
+bind-key -T copy-mode-vi 'C-j' select-pane -D
+bind-key -T copy-mode-vi 'C-k' select-pane -U
+bind-key -T copy-mode-vi 'C-l' select-pane -R
+bind-key -T copy-mode-vi 'C-\' select-pane -l
+
+# Resize the current pane using Alt + direction
+bind -n M-k resize-pane -U 5
+bind -n M-j resize-pane -D 5
+bind -n M-h resize-pane -L 5
+bind -n M-l resize-pane -R 5
+
+# C-g C-k to passthrough a C-k
+# C-k is consumed for pane navigation but we want it for kill-to-eol
+#unbind C-k
+#bind C-k send-key C-k
+
+bind r source-file ~/.tmux.conf \; display "Reloaded Config"
+
+set-option -g allow-rename off
+set-option -g renumber-windows on
+
+set-option -g set-clipboard off
+
+bind-key '-' split-window -v  -c '#{pane_current_path}'
+bind-key \\ split-window -h  -c '#{pane_current_path}'
+
+#set-window-option -g mode-keys vi
+#list-keys -T copy-mode-vi
+#bind P paste-buffer
+#bind-key -t vi-copy 'v' begin-selection
+#bind-key -t vi-copy 'y' copy-selection
+#bind-key -t vi-copy 'r' rectangle-toggle
+# Vi copypaste mode
+set-window-option -g mode-keys vi
+bind Escape copy-mode
+
+##Yank to copy text with y.
+#bind-key -t vi-copy y copy-pipe "tmux save-buffer - | xclip -sel clipboard -i"
+
+## Update default binding of `Enter` to also copy with this method.
+#unbind -t vi-copy Enter
+#bind-key -t vi-copy Enter copy-pipe "tmux save-buffer - | xclip -sel clipboard -i"
+
+## Bind ']' to paste.
+#bind ] run "tmux set-buffer \"$(xclip -o -sel clipboard)\" && tmux paste-buffer"
+
+
+## http://askubuntu.com/a/507215/413683
+#set -g set-clipboard off
+##set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+
+bind-key -n C-S-Left swap-window -t -1
+bind-key -n C-S-Right swap-window -t +1
