@@ -115,11 +115,8 @@
     "workbench.colorTheme": "Tomorrow Night Eighties",
     "python.dataScience.sendSelectionToInteractiveWindow": false,
     "python.defaultInterpreterPath": "/Users/tmarwah/miniconda3/envs/penv3/bin/python",
-    "workbench.editorAssociations": [
-      {
-        "viewType": "jupyter.notebook.ipynb",
-        "filenamePattern": "*.ipynb"
-      }
-    ],
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "workbench.iconTheme": "material-icon-theme",
 }
