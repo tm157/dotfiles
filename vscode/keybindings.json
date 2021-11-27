@@ -97,4 +97,17 @@
     "command": "workbench.action.splitEditorOrthogonal",
     "when": "editorTextFocus"
 },
+{
+    "key": "shift+cmd+r",
+    "command": "jupyter.restartkernel"
+},
+{
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+},
+{
+    "key": "shift+cmd+c",
+    "command": "notebook.clearAllCellsOutputs"
+},
 ]
