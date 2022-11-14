@@ -1,5 +1,5 @@
 ###OK & FEEL ###
-set-option -g default-shell /bin/bash
+set-option -g default-shell /bin/zsh
 
 unbind C-b
 set -g prefix `
