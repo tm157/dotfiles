@@ -80,7 +80,7 @@ function M.config()
 
   local default_diagnostic_config = {
     signs = {
-      active = true,
+      active = false,
       values = {
         { name = "DiagnosticSignError", text = icons.diagnostics.Error },
         { name = "DiagnosticSignWarn", text = icons.diagnostics.Warning },
@@ -90,8 +90,8 @@ function M.config()
     },
     virtual_text = false,
     update_in_insert = false,
-    underline = true,
-    severity_sort = true,
+    underline = false,
+    severity_sort = false,
     float = {
       focusable = true,
       style = "minimal",
