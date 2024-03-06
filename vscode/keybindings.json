@@ -1,113 +1,122 @@
 // Place your key bindings in this file to override the defaults
 [
-{
-    "key": "ctrl+k",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-},
-{
-    "key": "ctrl+l",
-    "command": "workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus"
-},
-{
-    "key": "ctrl+\\",
-    "command": "workbench.action.terminal.split",
-    "when": "terminalFocus"
-},
-{
-    "key": "ctrl+h",
-    "command": "workbench.action.terminal.focusPreviousPane",
-    "when": "terminalFocus"
-},
-{
-    "key": "alt+j",
-    "command": "workbench.action.terminal.resizePaneDown",
-    "when": "terminalFocus"
-},
-{
-    "key": "alt+h",
-    "command": "workbench.action.terminal.resizePaneLeft",
-    "when": "terminalFocus"
-},
-{
-    "key": "alt+l",
-    "command": "workbench.action.terminal.resizePaneRight",
-    "when": "terminalFocus"
-},
-{
-    "key": "alt+k",
-    "command": "workbench.action.terminal.resizePaneUp",
-    "when": "terminalFocus"
-},
-{
-    "key": "cmd+backspace",
-    "command": "notifications.clearAll",
-    "when": "editorTextFocus"
-},
-{
-    "key": "ctrl+x",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-},
-{
-    "key": "ctrl+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-},
-{
-    "key": "ctrl+1",
-    "command": "workbench.action.terminal.focusAtIndex1",
-    "when": "terminalFocus"
-},
-{
-    "key": "shift+cmd+b",
-    "command": "-workbench.action.tasks.build"
-},
-{
-    "key": "shift+cmd+b",
-    "command": "workbench.action.toggleActivityBarVisibility"
-},
-{
-    "key": "ctrl+enter",
-    "command": "-python.datascience.execSelectionInteractive",
-},
-{
-    "key": "cmd+enter",
-    "command": "latex-workshop.build",
-    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
-},
-{
-    "key": "cmd+s",
-    "command": "latex-workshop.build",
-    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
-},
-{
-    "key": "alt+cmd+b",
-    "command": "-latex-workshop.build",
-    "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
-},
-{
-    "key": "ctrl+\\",
-    "command": "workbench.action.splitEditor",
-    "when": "editorTextFocus"
-},
-{
-    "key": "ctrl+-",
-    "command": "workbench.action.splitEditorOrthogonal",
-    "when": "editorTextFocus"
-},
-{
-    "key": "shift+cmd+r",
-    "command": "jupyter.restartkernel"
-},
-{
-    "key": "shift+cmd+c",
-    "command": "-workbench.action.terminal.openNativeConsole",
-    "when": "!terminalFocus"
-},
-{
-    "key": "shift+cmd+c",
-    "command": "notebook.clearAllCellsOutputs"
-},
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "notifications.clearAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-python.datascience.execSelectionInteractive",
+    },
+    {
+        "key": "cmd+enter",
+        "command": "latex-workshop.build",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "cmd+s",
+        "command": "latex-workshop.build",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-latex-workshop.build",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.splitEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.splitEditorOrthogonal",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "jupyter.restartkernel"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "notebook.clearAllCellsOutputs"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "ctrl+cmd+m",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    }
 ]
