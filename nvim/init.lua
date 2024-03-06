@@ -28,8 +28,9 @@ spec "user.project"
 -- spec "user.toggleterm"
 spec "user.nvim_tmux_navigation"
 require "user.lazy"
--- vim.cmd("colorscheme sonokai")
+vim.cmd("colorscheme sonokai")
 -- vim.cmd("colorscheme kanagawa-dragon")
-vim.cmd("colorscheme gruvbox-material")
-vim.api.nvim_set_hl(0, "Normal", {bg="#1c1c1c", fg="#a8a8a8"})
-vim.api.nvim_set_hl(0, "LineNr", {bg="#1c1c1c", fg="#767676"})
+-- vim.cmd("colorscheme gruvbox-material")
+-- vim.api.nvim_set_hl(0, "Normal", {bg="#1c1c1c", fg="#a8a8a8"})
+-- vim.api.nvim_set_hl(0, "LineNr", {bg="#1c1c1c", fg="#767676"})
+-- vim.api.nvim_set_hl(0, "Comment", {fg="#767676"})
