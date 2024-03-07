@@ -15,7 +15,7 @@ local lightThemes = {
 
 local darkThemes = {
 	-- { "EdenEast/nightfox.nvim", name = "duskfox" },
-	{ "sainnhe/sonokai", init = function() vim.g.sonokai_style = "shusia" end },
+	{ "sainnhe/sonokai", init = function() vim.g.sonokai_style = "default" end },
 	"rebelot/kanagawa.nvim",
 	{ "navarasu/onedark.nvim", opts = { style = "warm" } },
 	"sainnhe/gruvbox-material",
