@@ -31,7 +31,7 @@ require "user.lazy"
 vim.cmd("colorscheme sonokai")
 -- vim.cmd("colorscheme kanagawa-dragon")
 -- vim.cmd("colorscheme gruvbox-material")
--- vim.api.nvim_set_hl(0, "Normal", {bg="#2b2b2b", fg="#a8a8a8"})
+vim.api.nvim_set_hl(0, "Normal", {bg="#2b2b2b"})
 vim.api.nvim_set_hl(0, "NvimTreeNormal", {bg="#2b2b2b"})
 -- vim.api.nvim_set_hl(0, "LineNr", {bg="#2b2b2b", fg="#767676"})
 -- vim.api.nvim_set_hl(0, "Comment", {fg="#767676"})
