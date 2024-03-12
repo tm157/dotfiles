@@ -15,11 +15,31 @@ local lightThemes = {
 
 local darkThemes = {
 	-- { "EdenEast/nightfox.nvim", name = "duskfox" },
-	{ "sainnhe/sonokai", init = function() vim.g.sonokai_style = "default" end },
-	"rebelot/kanagawa.nvim",
-	{ "navarasu/onedark.nvim", opts = { style = "warm" } },
-	"sainnhe/gruvbox-material",
-	"sainnhe/everforest",
+	{ "sainnhe/sonokai", init = function() vim.g.sonokai_style = "shusia" end },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{"rebelot/kanagawa.nvim"},
+	{"mellow-theme/mellow.nvim"},
+	{ "navarasu/onedark.nvim", opts ={style = "warm"}},
+  {
+    "sainnhe/gruvbox-material",
+    enabled = true,
+    priority = 1000,
+    config = function()
+      vim.g.gruvbox_material_transparent_background = 0
+      vim.g.gruvbox_material_foreground = "mix"
+      vim.g.gruvbox_material_background = "hard" -- soft, medium, hard
+    end,
+  },
+	{"sainnhe/everforest"},
+  {
+    "LunarVim/darkplus.nvim",
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    init = function() 
+      vim.cmd.colorscheme "darkplus"
+    end
+
+  }
 }
 
 

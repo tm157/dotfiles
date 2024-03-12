@@ -7,10 +7,6 @@ local M = {
       event = "InsertEnter",
     },
     {
-      "hrsh7th/cmp-emoji",
-      event = "InsertEnter",
-    },
-    {
       "hrsh7th/cmp-buffer",
       event = "InsertEnter",
     },
@@ -20,6 +16,10 @@ local M = {
     },
     {
       "hrsh7th/cmp-cmdline",
+      event = "InsertEnter",
+    },
+    {
+      "hrsh7th/cmp-nvim-lsp-signature-help",
       event = "InsertEnter",
     },
     {
