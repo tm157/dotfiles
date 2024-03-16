@@ -17,6 +17,7 @@ spec "user.whichkey"
 spec "user.nvimtree"
 spec "user.comment"
 spec "user.lualine"
+-- spec "user.extras.tabby"
 spec "user.navic"
 spec "user.breadcrumbs"
 spec "user.harpoon"
@@ -29,10 +30,3 @@ spec "user.project"
 spec "user.nvim_tmux_navigation"
 require "user.lazy"
 vim.cmd("colorscheme catppuccin-mocha")
--- vim.cmd("colorscheme catppuccin-frappe")
--- vim.api.nvim_set_hl(0, "Normal", {bg="#2b2b2b"})
--- vim.api.nvim_set_hl(0, "Normal", {fg="#c2c2c2"})
--- vim.api.nvim_set_hl(0, "NvimTreeNormal", {bg="#2b2b2b"})
--- vim.api.nvim_set_hl(0, "NvimTreeNormal", {fg="#c2c2c2"})
--- vim.api.nvim_set_hl(0, "LineNr", {bg="#2b2b2b", fg="#767676"})
--- vim.api.nvim_set_hl(0, "Comment", {fg="#767676"})
