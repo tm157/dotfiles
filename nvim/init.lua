@@ -29,6 +29,7 @@ spec "user.project"
 spec "user.nvim_tmux_navigation"
 require "user.lazy"
 vim.cmd("colorscheme sonokai")
+-- vim.cmd("colorscheme gruvbox-material")
 -- vim.cmd("colorscheme catppuccin-frappe")
 -- vim.api.nvim_set_hl(0, "Normal", {bg="#2b2b2b"})
 -- vim.api.nvim_set_hl(0, "Normal", {fg="#c2c2c2"})
