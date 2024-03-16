@@ -66,7 +66,7 @@ local darkThemes = {
 						-- mantle = "#191C1D",
 						mantle = "#1c1c1c",
 						-- crust = "#151819",
-						crust = "#121212",
+						crust = "#303030",
 					},
 				},
 				styles = {
