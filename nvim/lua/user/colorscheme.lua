@@ -96,7 +96,7 @@ local darkThemes = {
 						VertSplit = { bg = colors.base, fg = colors.surface0 },
 						CursorLineNr = { fg = colors.surface2 },
 						Pmenu = { bg = colors.crust, fg = "" },
-						PmenuSel = { bg = colors.surface0, fg = "" },
+						PmenuSel = { bg = colors.surface1, fg = "" },
 						IndentBlanklineChar = { fg = colors.surface0 },
 						IndentBlanklineContextChar = { fg = colors.surface2 },
 						GitSignsChange = { fg = colors.peach },
