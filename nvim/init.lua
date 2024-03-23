@@ -28,5 +28,6 @@ spec "user.alpha"
 spec "user.project"
 -- spec "user.toggleterm"
 spec "user.nvim_tmux_navigation"
+spec "user.nvim-osc52"
 require "user.lazy"
 vim.cmd("colorscheme catppuccin-mocha")

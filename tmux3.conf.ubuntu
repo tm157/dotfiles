@@ -88,7 +88,7 @@ bind r source-file ~/.tmux.conf \; display "Reloaded Config"
 set-option -g allow-rename off
 set-option -g renumber-windows on
 
-set-option -g set-clipboard off
+set-option -g set-clipboard on
 
 bind-key '-' split-window -v  -c '#{pane_current_path}'
 bind-key \\ split-window -h  -c '#{pane_current_path}'
